@@ -23,7 +23,7 @@ let simulation = d3
 	.force("y", d3.forceY().y(h / 2))
 	.force("x", d3.forceX().x(w / 2));
 
-d3.csv("data.csv", function (data) {
+d3.csv("https://github.com/zineanteoh/cluster/blob/master/data.csv", function (data) {
 	data.forEach(function (d) {
 		d.r = radius;
 		d.x = w / 2;
